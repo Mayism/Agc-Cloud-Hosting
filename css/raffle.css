@@ -1,0 +1,150 @@
+.lottery-top,.lottery-content,.lottery-con,.lottery-bottom{position: relative;}
+img{width: 100%;display: inherit;}
+table { border-spacing: 0; border-collapse: collapse; text-align: center;width:100%;height: 100%;}
+
+.lottery-con{width: 92%;margin:0 auto;position: absolute;top: 0%;left: 4%;}
+.draw { width:87%; height: 87.5%; margin: 0 auto;  background-size: 100% 100%;position: absolute;top: 5%;left: 5%}
+.draw .item { width: 32%; height: 30%; background-image: url(../images/bg1.png); background-size: 100% 100%;}
+.draw .item.active { background-image: url(../images/bg2.png);}
+.draw .img { width: 73%; vertical-align: middle; text-align: center; margin:8% auto;}
+.draw .img img { vertical-align: top; width: 100%;height: 100%;}
+.draw .gap { width: 5px; }
+.draw .gap-2 { height: 5px; }
+.draw .name { display: block;  font-size: 12px; margin:0 12px; }
+
+.draw .draw-btn{background: url(../images/dianji.png) no-repeat 58% 8%;background-size: 100% 100%;}
+.draw .draw-btn:hover { background-color: #fe8d85; }
+.rule-enter{width: 30%;height: 8%;position: absolute;bottom: 11%;right: 18%;display: none}
+.awardslist{width: 30%;height: 8%;position: absolute;bottom: 11%;left: 18%}
+.mask{display: none; width: 100%;height: 100%;background-color: #000; opacity: 0.7;  position: fixed;top: 0;left: 0;z-index: 99;}
+.alert-box{display: none; width: 300px;min-height: 262px;position: fixed;left: 50%;top: 50%;margin-left: -150px;margin-top:-158px;background-color: #f59d3c;opacity: 1;z-index: 100;;background-size: 100% 100%;border-radius: 10px;}
+.alert-box2{display: none; width: 300px;height: 423px;position: fixed;left: 50%;top: 50%;margin-left: -150px;margin-top:-200px;background-color: #fff;opacity: 1;z-index: 100;background: url(../images/alert-hwcoins.png);background-size: 100% 100%;}
+.alert-award,.alert-noaward{display: none; width: 260px;height: 460px;position: fixed;left: 50%;top: 50%;margin-left: -130px;margin-top:-230px;border-radius: 10px;background-color: #fff;opacity: 1;z-index: 100;}
+.alert-award .close,.alert-noaward .close{color: #fff;}
+.gaward-award{}
+.gaward-con{padding:0 16px;text-align: center;margin-top: 11%;margin-bottom: 30%;color: #000;font-size: 20px;}
+.gaward-con2{padding:0 16px;text-align: center;margin-top: 21%;font-size: 20px;color:#ffd617 }
+.gaward-con span{font-size: 20px;color:#fdfc04;display: block;width: 90%;margin:16px auto; }
+
+.gradu,.toOpencard,.gradu2,.update-app{position: absolute;bottom: 11%;width: 100%;text-align: center;color: #4f3500;font-size: 20px;font-weight: bold;}
+
+.close{width: 33px;height: 63px;position: absolute;top: -64px;right: 0px;}
+.close2{width: 33px;height: 33px;font-size: 24px;color: red; position: absolute;top:16px;right: 22px;}
+.noHistory {display: none;width: 100%;position: absolute;top: 23.3%;text-align: center;opacity: 0.6;}
+.imgs {width: 66px;height: 66px;}
+.space-tr{height: 1%}
+.con-tr{height: 32%}
+
+@media all and (min-width : 480px) {
+   .alert-award,.alert-noaward{width: 380px;height: 532px;position: fixed;left: 50%;top: 50%;margin-left: -190px;margin-top:-266px;border-radius: 10px;background-color: #fff;opacity: 1;z-index: 100;}
+}
+
+.award-special-note{padding:4px 8px;background-color: rgba(0,0,0,0.5);color: #fff;  position: fixed;top: 50%;left: 25%;width: 50%;border-radius: 10px;text-align: center;display: none;}
+.special-note{
+    animation: show-move 2s 0s  ease forwards;
+    -moz-animation: show-move 2s 0s  ease forwards;
+    -webkit-animation: show-move 2s 0s  ease forwards;
+    -o-animation: show-move 2s 0s  ease forwards;
+}   
+@keyframes show-move
+{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*开卡动画*/
+.eid-moved{margin:16px auto;position: absolute;width: 50%;top: 10%;left: 25%; }
+.phone-display{position: absolute;top:10%;left: 3.2%; width: 93.3%;height:79.6%;}
+.opencard{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background:url("../images/eid-open.png") no-repeat 0 0;background-size: 900% 100%;
+	animation: left-move 20s 0s infinite ease;
+	-moz-animation: left-move 20s 0s infinite ease;
+	-webkit-animation: left-move 20s 0s infinite ease;
+	-o-animation: left-move 20s 0s infinite ease;
+}
+.step-box{width: 100%;height: 100%;overflow: hidden;position: relative;}
+.handstep{position: absolute;left: 100%;top: 100%; opacity: 1;z-index: 99}
+.hand-open{
+	animation: hand-move-open 20s 0s infinite ease;
+	-moz-animation: hand-move-open 20s 0s infinite ease;
+	animation-fill-mode: forwards;
+}
+.todetail{position: absolute;bottom: 27%;width: 19%;left:11%;height: 9%;display: none;}
+.todetail-middle{left: 40%}
+.todetail-right{left: 67%}
+.contact-btn{position: absolute;bottom:10%;left: 10%; width:80%;height:15%;}
+
+/*翻转样式*/
+.flip-container {
+	position: absolute;
+	width: 27%;
+	height: 47%;
+	top: 31%;
+	left: 8%;
+    display: inline-block;
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    -ms-transform: perspective(500px);
+    -moz-transform: perspective(500px); /*重要*/
+    transform-style: preserve-3d; /*重要*/
+}
+.flip-mask{
+    display: none;
+    width: 27%;
+    height: 47%;
+    top: 31%;
+    left: 8%;background-color: rgba(0,0,0,0.3); ;  position: absolute;z-index: 99;
+}
+.award-item-middle,.flip-mask2{
+    left: 37%
+}
+.award-item-right,.flip-mask3{
+    left: 65%
+}
+.flipper {
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d; /*重要*/
+}
+.front,.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;  /*重要*/
+    width: 100%;
+    height: 100%;
+}
+.front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.back{
+    transform: rotateY(-180deg);
+}
+
+/* 触发翻转 */
+.active{
+    animation: rotate-move 1s 0s  ease forwards;
+    -moz-animation: rotate-move 1s 0s  ease forwards;
+    -webkit-animation: rotate-move 1s 0s  ease forwards;
+    -o-animation: rotate-move 1s 0s  ease forwards;
+    /*animation-fill-mode: forwards;*/
+}   
+@keyframes rotate-move
+{
+    0% {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+}

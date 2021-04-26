@@ -1,0 +1,110 @@
+/*问题3页面动画*/
+@keyframes left-move
+{
+	0% {
+	  background-position: 0%;		  
+	}
+	8% {
+	  background-position: 0%;		  
+	}
+	10% {
+	 background-position: 12.25%;	
+	}
+	18% {
+	 background-position: 12.25%;	
+	}
+	20% {
+	 background-position: 25%;	
+	}
+	28% {
+	 background-position: 25%;	
+	}
+	30% {
+	 background-position: 37.5%;	
+	}
+	38% {
+	 background-position: 37.5%;	
+	}
+	40% {
+	 background-position: 50%;	
+	}
+	48% {
+	 background-position: 50%;	
+	}
+	50% {
+	 background-position: 62.5%;	
+	}
+	68% {
+	 background-position: 62.5%;	
+	}
+	70% {
+	 background-position: 75%;	
+	}
+	78% {
+	 background-position: 75%;	
+	}
+	80% {
+	 background-position: 87.5%;	
+	}
+	88% {
+	 background-position: 87.5%;	
+	}
+	90% {
+	 background-position: 100%;	
+	}
+	
+	100%{
+		background-position: 100%;	
+	}
+	
+}
+/*问题3手指动画*/
+@keyframes hand-move-open
+{
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0px);
+	}		
+	10% {
+	  opacity: 1;
+	  -webkit-transform: translate(-80%,-30%);
+	  transform: translate(-80%,-30%);
+	}
+	18% {
+	  opacity: 1;
+	  -webkit-transform: translate(-50%,-15%);
+	  transform: translate(-50%,-15%);
+	}
+
+	28% {
+	  -webkit-transform: translate(50%,50%);
+	  transform: translate(50%,50%);
+	}
+	38% {
+	  -webkit-transform: translate(50%,50%);
+	  transform: translate(50%,50%);
+	}
+	48% {
+	  opacity: 1;
+	  -webkit-transform: translate(-50%,-15%);
+	  transform: translate(-50%,-15%);
+	}
+	58% {
+	  -webkit-transform: translate(50%,50%);
+	  transform: translate(50%,50%);
+	}
+	88% {
+	  -webkit-transform: translate(50%,50%);
+	  transform: translate(50%,50%);
+	}
+	95% {
+	  opacity: 1;
+	  -webkit-transform: translate(-50%,-15%);
+	  transform: translate(-50%,-15%);
+	}
+	100% {
+	  -webkit-transform: translate(50%,50%);
+	  transform: translate(50%,50%);
+	}
+}
